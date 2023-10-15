@@ -34,9 +34,19 @@ namespace bank {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Panel^ pn_login;
+	protected:
+
+	private: System::Windows::Forms::Panel^ pn_admin;
+	protected:
+
+	private: System::Windows::Forms::Panel^ pn_client;
+
+	private: System::Windows::Forms::Panel^ principal_panel;
+
+
+
+
 	protected:
 
 	private:
@@ -52,50 +62,56 @@ namespace bank {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->pn_login = (gcnew System::Windows::Forms::Panel());
+			this->pn_admin = (gcnew System::Windows::Forms::Panel());
+			this->pn_client = (gcnew System::Windows::Forms::Panel());
+			this->principal_panel = (gcnew System::Windows::Forms::Panel());
 			this->SuspendLayout();
 			// 
-			// button1
+			// pn_login
 			// 
-			this->button1->Location = System::Drawing::Point(91, 88);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->pn_login->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pn_login->Location = System::Drawing::Point(0, 0);
+			this->pn_login->Name = L"pn_login";
+			this->pn_login->Size = System::Drawing::Size(854, 427);
+			this->pn_login->TabIndex = 0;
 			// 
-			// button2
+			// pn_admin
 			// 
-			this->button2->Location = System::Drawing::Point(129, 159);
-			this->button2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(67, 57);
-			this->button2->TabIndex = 1;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->pn_admin->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pn_admin->Location = System::Drawing::Point(0, 0);
+			this->pn_admin->Name = L"pn_admin";
+			this->pn_admin->Size = System::Drawing::Size(854, 427);
+			this->pn_admin->TabIndex = 1;
 			// 
-			// pictureBox1
+			// pn_client
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(46, 179);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(100, 50);
-			this->pictureBox1->TabIndex = 2;
-			this->pictureBox1->TabStop = false;
+			this->pn_client->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pn_client->Location = System::Drawing::Point(0, 0);
+			this->pn_client->Name = L"pn_client";
+			this->pn_client->Size = System::Drawing::Size(854, 427);
+			this->pn_client->TabIndex = 2;
+			// 
+			// principal_panel
+			// 
+			this->principal_panel->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->principal_panel->Location = System::Drawing::Point(0, 0);
+			this->principal_panel->Name = L"principal_panel";
+			this->principal_panel->Size = System::Drawing::Size(854, 427);
+			this->principal_panel->TabIndex = 3;
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 257);
-			this->Controls->Add(this->pictureBox1);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
+			this->ClientSize = System::Drawing::Size(854, 427);
+			this->Controls->Add(this->principal_panel);
+			this->Controls->Add(this->pn_client);
+			this->Controls->Add(this->pn_admin);
+			this->Controls->Add(this->pn_login);
+			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
