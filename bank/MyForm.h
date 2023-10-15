@@ -57,31 +57,30 @@ namespace bank {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(102, 110);
-			this->button1->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
+			this->button1->Location = System::Drawing::Point(91, 88);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(84, 29);
+			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(145, 199);
+			this->button2->Location = System::Drawing::Point(129, 159);
+			this->button2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->Size = System::Drawing::Size(67, 57);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"button2";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(317, 316);
+			this->ClientSize = System::Drawing::Size(282, 253);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->ResumeLayout(false);
